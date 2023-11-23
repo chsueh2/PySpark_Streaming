@@ -31,14 +31,15 @@ Chien-Lan Hsueh (chienlan.hsueh at gmail.com)
 
 ## Overview and Project Goal
 
-Set up data stream to read data with and without overlapping windows.Add a trigger to slow down how often we do the computations. Perform data transform and aggregation before we write streaming data back.
+Set up data stream to read data with and without overlapping windows. Add a trigger to slow down how often we do the computations. Perform data transform and aggregation before we write streaming data back.
 
 ## Workflow
 
 1. Preparation and Load module
-2. Streaming Data Without Overlapping Windows
-3. Streaming Data With Overlapping Windows
-4. Example: Streaming Accelerometer Data
+2. Streaming Data 
+   - Without Overlapping Windows
+   - With Overlapping Windows
+3. Example: Streaming Accelerometer Data
    - Define helper functions (in execution order):
      - setup_stream(): Set up stream data and folders
      - start_query(): Create and start a query to read from input streams, perform calculation and write the output
