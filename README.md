@@ -2,7 +2,7 @@
 
 Analyze, transform and aggregate streaming data with and without overlapping windows by using Spark Structured Streaming.
 
-
+[Project report](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chsueh2/PySpark_Streaming/main/streaming.html)
 
 Key features:
 
@@ -23,7 +23,7 @@ Modules used:
 
 ## Project Report
 
-[Project report](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chsueh2/NFL_pandas-on-Spark/main/NFL.html) ([Jupyter Notebook](./NFL.ipynb))
+[Project report](https://htmlpreview.github.io/?https://raw.githubusercontent.com/chsueh2/PySpark_Streaming/main/streaming.html) ([Jupyter Notebook](./streaming.ipynb))
 
 The analysis results with theoretical backgrounds are included.
 
@@ -39,3 +39,14 @@ Set up data stream to read data with and without overlapping windows.Add a trigg
 2. Streaming Data Without Overlapping Windows
 3. Streaming Data With Overlapping Windows
 4. Example: Streaming Accelerometer Data
+   - Define helper functions (in execution order):
+     - setup_stream(): Set up stream data and folders
+     - start_query(): Create and start a query to read from input streams, perform calculation and write the output
+     - start_stream(): Start streaming data
+   - Set up steaming and start the queries
+     1. Set up stream data and folders for each selected pid
+     1. Start 2 querries to monitor the stream folders. If any data come in, do the calculation and output the results
+     1. Check the query status
+     1. Start the data streaming to send in data
+     1. Output teh results to a single csv file
+     1. Stop the queries
